@@ -3197,7 +3197,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         function setHrefs() {
             document.getElementById("ios-streisand").href = `streisand://import/${fullUrl}`;
             document.getElementById("ios-v2raytun").href = `v2raytun://import/${fullUrl}`
-            document.getElementById("android-v2rayng").href = `v2rayng://install-config?url=${fullUrl}`;
+            document.getElementById("android-v2raytun").href = `v2raytun://import/${fullUrl}`;
             document.getElementById("ios-singbox").href = `sing-box://import-remote-profile?url=${fullUrl}#Sub`;
             document.getElementById("android-singbox").href = `sing-box://import-remote-profile?url=${fullUrl}#Sub`;
             document.getElementById("android-nekobox").href = `sn://subscription?url=${fullUrl}&name=Sub`;
@@ -3530,17 +3530,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 },
             },
             Android: {
-                v2rayNG: {
+                v2RayTun: {
                     url: [
                         {
                             name: "GooglePlay",
-                            url: "https://play.google.com/store/apps/details?id=com.v2ray.ang",
+                            url: "https://play.google.com/store/apps/details?id=com.v2raytun.android",
                             best: false,
-                        },
-                        {
-                            name: "Github",
-                            url: "https://github.com/2dust/v2rayNG/releases/download/1.9.31/v2rayNG_1.9.31_universal.apk",
-                            best: true,
                         },
                     ],
                     tutorial: "",
@@ -3616,14 +3611,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 telchannel: "Telegram Channel",
                 telsupport: "Telegram Support",
                 telProxy: "Telegram Proxy",
-                v2rayNG: "Android - Download v2rayNG",
+                av2raytun: "Android - Download v2RayTun",
                 NekoBox: "Android - Download NekoBox",
                 SingBox: "Android - Download SingBox",
                 Streisand: "iOS - Download Streisand",
                 FoXray: "iOS - Downaload FoXray",
                 v2raytun: "iOS - Download v2Raytun",
                 addto: "Quick Install",
-                addV2rayNG: "v2rayNG",
+                addaV2raytun: "v2RayTun",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
@@ -3698,14 +3693,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 telchannel: "کانال تلگرام",
                 telProxy: "پروکسی تلگرام",
                 telsupport: "پشتیبانی تلگرام",
-                v2rayNG: "اندروید - دانلود برنامه v2rayNG",
+                av2raytun: "اندروید - دانلود برنامه v2RayTun",
                 NekoBox: "اندروید - دانلود برنامه NekoBox",
                 SingBox: "اندروید - دانلود برنامه Sing-Box",
                 Streisand: "آی او اِس - دانلود برنامه Streisand",
                 FoXray: "آی او اِس - دانلود برنامه FoXray",
                 v2raytun: "آی او اِس - دانلود برنامه v2RayTun",
                 addto: "نصب با یک کلیک",
-                addV2rayNG: "v2rayNG",
+                addav2raytun: "v2RayTun",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
@@ -3780,14 +3775,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 telchannel: "Telegram频道",
                 telsupport: "Telegram支持",
                 telProxy: "Telegram代理",
-                v2rayNG: "安卓 - 下载 v2rayNG",
+                av2raytun: "安卓 - 下载 v2RayTun",
                 NekoBox: "安卓 - 下载 NekoBox",
                 SingBox: "安卓 - 下载 SingBox",
                 Streisand: "苹果 - 下载 Streisand",
                 FoXray: "苹果 - 下载 FoXray",
                 v2raytun: "苹果 - 下载 v2RayTun",
                 addto: "快速安装",
-                addV2rayNG: "v2rayNG",
+                addav2raytun: "v2RayTun",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
@@ -3862,14 +3857,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 telchannel: "Телеграм-канал",
                 telsupport: "Поддержка Telegram",
                 telProxy: "Прокси-сервер Telegram",
-                v2rayNG: "Android - Download v2rayNG",
+                av2raytun: "Android - Download v2RayTun",
                 NekoBox: "Android - Download NekoBox",
                 SingBox: "Android - Download SingBox",
                 Streisand: "iOS - Download Streisand",
                 FoXray: "iOS - Downaload FoXray",
                 v2raytun: "iOS - Download v2RayTun",
                 addto: "Быстрая настройка",
-                addV2rayNG: "v2rayNG",
+                addav2raytun: "v2RayTun",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
@@ -5319,7 +5314,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                     </svg>
                                                                     <div
                                                                         class="flex items-center justify-start gap-x-2">
-                                                                        <span x-text="$t('addV2rayNG')">
+                                                                        <span x-text="$t('addav2raytun')">
                                                                         </span>
                                                                         <div
                                                                             class="bg-gray-100 pb-1.5 px-2 pt-1 rounded-full">
@@ -5367,7 +5362,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                     <p x-text="$t('clickForDownload')"
                                                                         class="text-sm mb-4 font-normal text-white lg:text-base">
                                                                     </p>
-                                                                    <a href="https://github.com/2dust/v2rayNG/releases/download/1.8.9/v2rayNG_1.8.9.apk"
+                                                                    <a href="https://play.google.com/store/apps/details?id=com.v2raytun.android"
                                                                         class="flex mb-4 items-center gap-x-4 w-full bg-gray-800 shadow-md px-3 py-2 rounded-3xl justify-between">
                                                                         <lord-icon class="w-8 h-8"
                                                                             src="https://cdn.lordicon.com/albqovim.json"
@@ -5396,7 +5391,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                     <p x-text="$t('clickForAdd')"
                                                                         class="text-sm mb-4 font-normal text-white lg:text-base">
                                                                     </p>
-                                                                    <a id="android-v2rayng"
+                                                                    <a id="android-v2raytun"
                                                                         class="flex mb-4 items-center gap-x-4 w-full bg-stone-800 shadow-md px-3 py-2 rounded-3xl justify-between">
                                                                         <lord-icon class="w-8 h-8"
                                                                             src="https://cdn.lordicon.com/mrdiiocb.json"
