@@ -3196,7 +3196,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
         function setHrefs() {
             document.getElementById("ios-streisand").href = `streisand://import/${fullUrl}`;
-            document.getElementById("ios-v2box").href = `v2raytun://import/${fullUrl}`
+            document.getElementById("ios-v2raytun").href = `v2raytun://import/${fullUrl}`
             document.getElementById("android-v2rayng").href = `v2rayng://install-config?url=${fullUrl}`;
             document.getElementById("ios-singbox").href = `sing-box://import-remote-profile?url=${fullUrl}#Sub`;
             document.getElementById("android-singbox").href = `sing-box://import-remote-profile?url=${fullUrl}#Sub`;
@@ -3493,7 +3493,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         {
                             name: "IOS 14+",
                             url: "https://apps.apple.com/us/app/streisand/id6450534064",
-                            best: true,
+                            best: false,
                         },
                     ],
                     tutorial: "",
@@ -3508,12 +3508,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     ],
                     tutorial: "",
                 },
-                V2Box: {
+                V2RayTun: {
                     url: [
                         {
                             name: "IOS 14+",
-                            url: "https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690",
-                            best: false,
+                            url: "https://apps.apple.com/ru/app/v2raytun/id6476628951?l=en-GB",
+                            best: true,
                         },
                     ],
                     tutorial: "",
@@ -3621,13 +3621,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 SingBox: "Android - Download SingBox",
                 Streisand: "iOS - Download Streisand",
                 FoXray: "iOS - Downaload FoXray",
-                V2Box: "iOS - Download v2Box",
+                v2raytun: "iOS - Download v2Raytun",
                 addto: "Quick Install",
                 addV2rayNG: "v2rayNG",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
-                addV2Box: "v2Box",
+                addv2rayrun: "v2RayTun",
                 addShadowrocket: "Shadowrocket",
                 addsingbox: "Sing-Box",
                 addV2rayN: "v2rayN",
@@ -3703,13 +3703,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 SingBox: "اندروید - دانلود برنامه Sing-Box",
                 Streisand: "آی او اِس - دانلود برنامه Streisand",
                 FoXray: "آی او اِس - دانلود برنامه FoXray",
-                V2Box: "آی او اِس - دانلود برنامه v2Box",
+                v2raytun: "آی او اِس - دانلود برنامه v2RayTun",
                 addto: "نصب با یک کلیک",
                 addV2rayNG: "v2rayNG",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
-                addV2Box: "v2Box",
+                addv2raytun: "v2RayTun",
                 addShadowrocket: "Shadowrocket",
                 addsingbox: "Sing-Box",
                 addV2rayN: "v2rayN",
@@ -3785,13 +3785,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 SingBox: "安卓 - 下载 SingBox",
                 Streisand: "苹果 - 下载 Streisand",
                 FoXray: "苹果 - 下载 FoXray",
-                V2Box: "苹果 - 下载 v2Box",
+                v2raytun: "苹果 - 下载 v2RayTun",
                 addto: "快速安装",
                 addV2rayNG: "v2rayNG",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
-                addV2Box: "v2Box",
+                addv2raytun: "v2RayTun",
                 addShadowrocket: "Shadowrocket",
                 addsingbox: "Sing-Box",
                 addV2rayN: "v2rayN",
@@ -3867,13 +3867,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 SingBox: "Android - Download SingBox",
                 Streisand: "iOS - Download Streisand",
                 FoXray: "iOS - Downaload FoXray",
-                V2Box: "iOS - Download v2Box",
+                v2raytun: "iOS - Download v2RayTun",
                 addto: "Быстрая настройка",
                 addV2rayNG: "v2rayNG",
                 addStreisand: "Streisand",
                 addFoXray: "FoXray",
                 addNekoBox: "NekoBox",
-                addV2Box: "v2Box",
+                addv2raytun: "v2RayTun",
                 addShadowrocket: "Shadowrocket",
                 addsingbox: "Sing-Box",
                 addV2rayN: "v2rayN",
@@ -4570,7 +4570,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                             </clipPath>
                                                                         </defs>
                                                                     </svg>
-                                                                    <span x-text="$t('addV2Box')">
+                                                                    <span x-text="$t('addv2raytun')">
                                                                     </span>
                                                                 </div>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -4628,7 +4628,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                         <p x-text="$t('clickForDownload')"
                                                                             class="text-sm mb-4 font-normal text-white lg:text-base">
                                                                         </p>
-                                                                        <a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690"
+                                                                        <a href="https://play.google.com/store/apps/details?id=com.v2raytun.android&pcampaignid=web_share"
                                                                             class="flex mb-4 items-center gap-x-4 w-full bg-gray-800 shadow-md px-3 py-2 rounded-3xl justify-between">
                                                                             <lord-icon class="w-8 h-8"
                                                                                 src="https://cdn.lordicon.com/albqovim.json"
@@ -4657,7 +4657,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                         <p x-text="$t('clickForAdd')"
                                                                             class="text-sm mb-4 font-normal text-white lg:text-base">
                                                                         </p>
-                                                                        <a id="ios-v2box"
+                                                                        <a id="ios-v2raytun"
                                                                             class="flex mb-4 items-center gap-x-4 w-full bg-stone-800 shadow-md px-3 py-2 rounded-3xl justify-between">
                                                                             <lord-icon class="w-8 h-8"
                                                                                 src="https://cdn.lordicon.com/mrdiiocb.json"
